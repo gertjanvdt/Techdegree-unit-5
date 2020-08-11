@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Galary</title>
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="<CSS URL>">
-    <script src="<JS URL>" async></script>
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <header>
@@ -21,58 +21,66 @@
     <main>
         <div class="gallery">
 
-            <a href="images/01.jpg" data-caption="Image caption">
-                <img src="thumbnails/01.jpg" alt="First image">
+            <a href="images/01.jpg" data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+                <img src="thumbnails/01.jpg" alt="Hay Bales" class="thumbnail">
             </a>
 
-            <a href="images/02.jpg">
-                <img src="thumbnails/02.jpg" alt="Second image">
+            <a href="images/02.jpg" data-caption="The lake was so calm today. We had a great view of the snow on the mountains from here.">
+                <img src="thumbnails/02.jpg" alt="Lake" class="thumbnail">
             </a>
 
-            <a href="images/03.jpg">
-                <img src="thumbnails/03.jpg" alt="Third image">
+            <a href="images/03.jpg" data-caption="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+                <img src="thumbnails/03.jpg" alt="Canyon" class="thumbnail">
             </a>
 
-            <a href="images/04.jpg">
-                <img src="thumbnails/04.jpg" alt="Fourth image">
+            <a href="images/04.jpg" data-caption="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+                <img src="thumbnails/04.jpg" alt="Iceberg" class="thumbnail">
             </a>
 
-            <a href="images/05.jpg">
-                <img src="thumbnails/05.jpg" alt="Fifth image">
+            <a href="images/05.jpg" data-caption="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+                <img src="thumbnails/05.jpg" alt="Desert" class="thumbnail">
             </a>
 
-            <a href="images/06.jpg">
-                <img src="thumbnails/06.jpg" alt="Sixth image">
+            <a href="images/06.jpg" data-caption="Fall is coming, I love when the leaves on the trees start to change color.">
+                <img src="thumbnails/06.jpg" alt="Fall" class="thumbnail">
             </a>
 
-            <a href="images/07.jpg">
-                <img src="thumbnails/07.jpg" alt="Seventh image">
+            <a href="images/07.jpg" data-caption="I drove past this plantation yesterday, everything is so green!">
+                <img src="thumbnails/07.jpg" alt="Plantation" class="thumbnail">
             </a>
 
-            <a href="images/08.jpg">
-                <img src="thumbnails/08.jpg" alt="Eigth image">
+            <a href="images/08.jpg" data-caption="My summer vacation to the Oregon Coast. I love the sandy dunes!">
+                <img src="thumbnails/08.jpg" alt="Dunes" class="thumbnail">
             </a>
 
-            <a href="images/09.jpg">
-                <img src="thumbnails/09.jpg" alt="Nineth image">
+            <a href="images/09.jpg" data-caption="We enjoyed a quiet stroll down this countryside lane.">
+                <img src="thumbnails/09.jpg" alt="Countryside Lane" class="thumbnail">
             </a>
 
-            <a href="images/10.jpg">
-                <img src="thumbnails/10.jpg" alt="Tenth image">
+            <a href="images/10.jpg" data-caption="Sunset at the coast! The sky turned a lovely shade of orange.">
+                <img src="thumbnails/10.jpg" alt="Sunset" class="thumbnail">
             </a>
 
-            <a href="images/11.jpg">
-                <img src="thumbnails/11.jpg" alt="Eleventh image">
+            <a href="images/11.jpg" data-caption="I did a tour of a cave today and the view of the landscape below was breathtaking.">
+                <img src="thumbnails/11.jpg" alt="Cave" class="thumbnail">
             </a>
 
-            <a href="images/12.jpg">
-                <img src="thumbnails/12.jpg" alt="Twelveth image">
+            <a href="images/12.jpg" data-caption="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+                <img src="thumbnails/12.jpg" alt="Bluebells" class="thumbnail">
             </a>
 
         </div>
 
     </main>
-
-    <script src="js/searchFilter.js"></script>
+    <script src="js/baguetteBox.min.js" async></script>
+    <!-- <script src="js/searchFilter.js"></script> -->
+    <script src="js/searchSelfBuild.js"></script>
+     <!-- <script src="js/app.js"></script> -->
+    <script>
+        window.addEventListener('load', function() {
+          baguetteBox.run('.gallery');
+        });
+    </script>
+   
 </body>
 </html>

@@ -1,0 +1,48 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+
+header {
+    text-align: center;
+    font-size: 22px;
+    margin: 1em;
+}
+
+main {
+    max-width: 860px;
+    margin: auto;
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-rows: repeat(auto-fill, 200px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+input {
+    padding: .75em;
+    border-radius: 10px;
+    border: none;
+    margin: 1em;
+    background-color: white;
+}
+
+input:hover {
+    border: lightseagreen 1px solid;    
+}
+
+input:focus {
+    border: lightseagreen 3px solid; 
+    outline: none;
+}
+
+.thumbnail:hover {
+    border: lightseagreen 3px solid; 
+    transform: scale(1.1); 
+}
