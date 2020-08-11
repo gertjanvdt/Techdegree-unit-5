@@ -1,15 +1,11 @@
 // Declare variables
 const images = document.getElementsByTagName('a');
 const numberOfImages = images.length;
-console.log(numberOfImages);
 let input = document.getElementById('search');
-console.log(input);
 
 // Function to compare search input and image caption
 function filterImage() {
     let seachInput = input.value.toUpperCase(); 
-    // seachInput = 'HAY';
-    // console.log(seachInput);
 
     for (let i = 0; i < numberOfImages; i++) {
         let imageCaption = images[i].getAttribute('data-caption').toUpperCase();
@@ -22,5 +18,5 @@ function filterImage() {
     }
 }
 
-// Exexute function
+// Execute function
 filterImage();
