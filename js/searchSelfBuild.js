@@ -17,6 +17,3 @@ function filterImage() {
             }
     }
 }
-
-// Execute function
-filterImage();
