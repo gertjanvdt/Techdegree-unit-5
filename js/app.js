@@ -1,3 +1,3 @@
-const search = new Filter('search', 'data-caption');
-
-baguetteBox.run('.gallery');
+window.addEventListener('load', function() {
+    baguetteBox.run('.gallery');
+  });
